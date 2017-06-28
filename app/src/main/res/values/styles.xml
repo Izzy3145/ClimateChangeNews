@@ -1,0 +1,48 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
+    <style name="section_style" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">@dimen/medium_text</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/secondary_text</item>
+        <item name="android:layout_marginLeft">@dimen/medium_border</item>
+        <item name="android:layout_marginRight">@dimen/medium_border</item>
+        <item name="android:layout_marginBottom">@dimen/medium_border</item>
+        <item name="android:layout_marginTop">@dimen/small_border</item>
+    </style>
+
+    <style name="name_style" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">@dimen/medium_text</item>
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:layout_marginLeft">@dimen/medium_border</item>
+        <item name="android:layout_marginRight">@dimen/medium_border</item>
+        <item name="android:layout_marginBottom">@dimen/small_border</item>
+        <item name="android:layout_marginTop">@dimen/medium_border</item>
+    </style>
+
+    <style name="button_style" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">@dimen/small_text</item>
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:background">@color/accent</item>
+        <item name="android:padding">@dimen/small_border</item>
+    </style>
+
+    <style name="title_style" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">@dimen/big_text</item>
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginLeft">@dimen/medium_border</item>
+        <item name="android:layout_marginRight">@dimen/medium_border</item>
+        <item name="android:layout_marginBottom">@dimen/small_border</item>
+        <item name="android:layout_marginTop">@dimen/medium_border</item>
+    </style>
+
+</resources>
