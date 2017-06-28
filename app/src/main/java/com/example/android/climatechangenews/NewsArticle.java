@@ -14,22 +14,22 @@ public class NewsArticle {
     private String mArticleUrl;
 
     //set up constructor
-    public NewsArticle(String section, String articleName, String articleUrl){
-        mSection=section;
-        mArticleName=articleName;
+    public NewsArticle(String section, String articleName, String articleUrl) {
+        mSection = section;
+        mArticleName = articleName;
         mArticleUrl = articleUrl;
     }
 
     //set getter methods
-    public String getmSection(){
+    public String getmSection() {
         return mSection;
     }
 
-    public String getmArticleName(){
+    public String getmArticleName() {
         return mArticleName;
     }
 
-    public String getmArticleUrl(){
+    public String getmArticleUrl() {
         return mArticleUrl;
     }
 

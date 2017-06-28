@@ -26,8 +26,8 @@ import static android.provider.ContactsContract.CommonDataKinds.Website.URL;
 
 public class MainActivity extends AppCompatActivity implements LoaderCallbacks<List<NewsArticle>> {
     private static final int ARTICLE_LOADER_ID = 1;
-    private ArticleAdapter mAdapter;
     TextView mEmptyStateTextView;
+    private ArticleAdapter mAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,13 +58,13 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<L
         newsListView.setEmptyView(mEmptyStateTextView);
 
         //ask Connectivity Manager to check the status of network connectivity
-        ConnectivityManager connMgr = (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
+        ConnectivityManager connMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
 
         //get status of default network connection
         NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
 
         //if there is a network connection, initialise loader
-        if(networkInfo != null && networkInfo.isConnected()) {
+        if (networkInfo != null && networkInfo.isConnected()) {
             getLoaderManager().initLoader(ARTICLE_LOADER_ID, null, this).forceLoad();
         } else {
 
